@@ -1,10 +1,9 @@
-
 {
-  "React Section Arrow Function with Top Space": {
+  "React Section Arrow Function with Filename": {
     "prefix": "rsc",
     "body": [
       "",
-      "const ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/} = () => {",
+      "const ${TM_FILENAME_BASE/(?:^|[-_])(\\w)/${1:/capitalize}/g} = () => {",
       "  return (",
       "    <div>",
       "      $0",
@@ -12,23 +11,23 @@
       "  );",
       "};",
       "",
-      "export default ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/};"
+      "export default ${TM_FILENAME_BASE/(?:^|[-_])(\\w)/${1:/capitalize}/g};"
     ],
-    "description": "React arrow function with filename as component name"
+    "description": "React arrow function with PascalCase filename"
   },
-  "React Section Normal Function with Top Space": {
+  "React Section Normal Function with Filename": {
     "prefix": "rfc",
     "body": [
       "",
-      "export default function ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}() {",
+      "export default function ${TM_FILENAME_BASE/(?:^|[-_])(\\w)/${1:/capitalize}/g}() {",
       "  return (",
-      "    <divs>",
+      "    <div>",
       "      $0",
-      "    </divs>",
+      "    </div>",
       "  );",
       "}",
       ""
     ],
-    "description": "React normal function with filename as component name"
+    "description": "React normal function with PascalCase filename"
   }
 }
