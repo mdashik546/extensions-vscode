@@ -27,6 +27,7 @@ Color Highlight
 CSS Navigation
 indent-rainbow
 Image preview
+VSCode React Refactor
 
 
 
