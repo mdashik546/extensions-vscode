@@ -2,4 +2,5 @@ react developer tools,
 redux devtools,
 ColorZilla,
 JSON Viewer Pro,
-JSON Formatter
+JSON Formatter,
+Fake Filler
